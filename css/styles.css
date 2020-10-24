@@ -68,15 +68,6 @@
   --main-bckgrnd: #2f303a;
   --white-clr: #ffffff;
 }
-/*
-body {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}*/
 
 .hero {
   background-color: #2f303a;
@@ -141,6 +132,9 @@ body {
 }
 
 .section-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -155,13 +149,16 @@ body {
 }
 
 .main-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding-top: 200px;
+
   color: var(--white-clr);
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -175,6 +172,20 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.team-item {
+  text-align: center;
+}
+h1,
+h2 {
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .section-staff {
@@ -228,6 +239,7 @@ body {
 }
 
 .btn-service {
+  display: inline-block;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -235,24 +247,30 @@ body {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+  padding: 10px 32px;
   background-color: #f5f4fa;
   color: var(--title-color);
+  border-radius: 4px;
 }
 
 .btn-service:hover,
 .btn-service:focus {
   background-color: var(--accent-color);
+  color: var(--white-clr);
 }
 
 .btn {
+  display: inline-block;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  padding: 6px 22px;
   background-color: #f5f4fa;
   color: var(--title-color);
+  border-radius: 4px;
 }
 
 .btn:hover,
@@ -287,4 +305,18 @@ body {
 }
 .site-nav .link-nav.current {
   color: var(--accent-color);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.text:last-child {
+  margin-bottom: 0px;
 }
