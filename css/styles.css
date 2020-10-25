@@ -91,6 +91,17 @@ p {
   margin-top: 0;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .hero {
   background-color: #2f303a;
   text-align: center;
@@ -127,6 +138,8 @@ p {
 }
 
 .logo-style {
+  display: block;
+  border: 1px solid salmon;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -172,8 +185,13 @@ p {
 }
 
 .main-title {
+  display: block;
+  text-align: center;
+  width: 696px;
   margin-top: 0px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   color: var(--white-clr);
   font-family: "Roboto", sans-serif;
@@ -184,6 +202,28 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.btn-service {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  background-color: #f5f4fa;
+  color: var(--title-color);
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+
+.btn-service:hover,
+.btn-service:focus {
+  background-color: var(--accent-color);
+  color: var(--white-clr);
 }
 
 .title-name {
@@ -198,7 +238,15 @@ p {
 
 .team-item {
   text-align: center;
+  width: 270px;
+  background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
+
+.team-item:last-child .profession {
+  margin-bottom: 0;
+}
+
 h1,
 h2 {
   text-align: center;
@@ -223,6 +271,7 @@ h2 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .profession {
@@ -233,10 +282,6 @@ h2 {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.profession:last-child {
-  margin-bottom: 0px;
 }
 
 .adress {
@@ -264,28 +309,6 @@ h2 {
   color: var(--white-clr);
 }
 
-.btn-service {
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
-  letter-spacing: 0.06em;
-  padding: 10px 32px;
-  background-color: #f5f4fa;
-  color: var(--title-color);
-  border-radius: 4px;
-  margin-bottom: 200px;
-}
-
-.btn-service:hover,
-.btn-service:focus {
-  background-color: var(--accent-color);
-  color: var(--white-clr);
-}
-
 .btn {
   display: inline-block;
   font-family: "Roboto", sans-serif;
@@ -310,6 +333,12 @@ h2 {
 .project {
   text-decoration: none;
 }
+.box {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  width: 370px;
+  text-align: center;
+}
 
 .project-title {
   font-family: "Roboto", sans-serif;
@@ -333,22 +362,52 @@ h2 {
 .site-nav .link-nav.current {
   color: var(--accent-color);
 }
+.site-nav,
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+.site-nav .link {
+  display: block;
+  padding-bottom: 21px;
+  padding-top: 21px;
+}
+.site-nav .item {
+  outline: 1px solid salmon;
+  margin-right: 50px;
+}
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
+.auth-nav {
+  display: flex;
   margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
-.item-text {
-  margin-bottom: 0px;
-  padding-top: 10px;
+.auth-nav .link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border: 1px solid salmon;
+}
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
 }
 
-.text:last-child {
-  margin-bottom: 0px;
+.item-text:last-child .text {
+  margin-bottom: 0;
+}
+
+.box:last-child .project-description {
+  margin-bottom: 0;
 }
