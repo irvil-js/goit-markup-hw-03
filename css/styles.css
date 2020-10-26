@@ -97,7 +97,6 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -140,7 +139,6 @@ p {
 
 .logo-style {
   display: block;
-  border: 1px solid salmon;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -187,7 +185,6 @@ p {
 
 .main-title {
   display: block;
-  text-align: center;
   width: 696px;
   margin-top: 0px;
   margin-bottom: 30px;
@@ -259,7 +256,6 @@ p {
   margin-right: 30px;
   margin-top: 50px;
   background-color: white;
-  border: 5px solid salmon;
 }
 
 .team-item:last-child {
@@ -350,7 +346,6 @@ h2 {
 .btn:hover,
 .btn:focus {
   background-color: var(--accent-color);
-
   color: var(--white-clr);
 }
 
@@ -401,7 +396,6 @@ h2 {
   padding-top: 21px;
 }
 .site-nav .item {
-  outline: 1px solid salmon;
   margin-right: 50px;
 }
 .site-nav .item:last-child {
@@ -416,7 +410,6 @@ h2 {
   display: block;
   padding-top: 21px;
   padding-bottom: 21px;
-  border: 1px solid salmon;
 }
 .auth-nav .item + .item {
   margin-left: 50px;
@@ -434,7 +427,6 @@ h2 {
 .list .item-text {
   width: calc((100% - 90px) / 4);
   padding-top: 94px;
-  border: 1px solid salmon;
 }
 
 .list .item-text + .item-text {
@@ -463,7 +455,6 @@ h2 {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 56px;
   padding-bottom: 94px;
 }
 
@@ -494,8 +485,19 @@ h2 {
 }
 
 .list-nav {
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 94px;
   padding-bottom: 50px;
-  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.btn-portfolio {
   margin-right: 8px;
+}
+
+.btn-portfolio:last-child {
+  margin-right: 0;
 }
