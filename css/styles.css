@@ -101,9 +101,16 @@ p {
   margin-bottom: 0;
 }
 
+body {
+  max-width: auto;
+  margin: 0px auto;
+}
+
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 
 .text {
@@ -124,7 +131,7 @@ p {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
@@ -190,13 +197,12 @@ p {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
   color: var(--white-clr);
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: 1.364;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -207,20 +213,20 @@ p {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 32px;
   background-color: #f5f4fa;
   color: var(--title-color);
   border-radius: 4px;
-  margin-bottom: 200px;
 }
 
 .btn-service:hover,
 .btn-service:focus {
   background-color: var(--accent-color);
   color: var(--white-clr);
+  outline: none;
 }
 
 .title-name {
@@ -392,8 +398,8 @@ h2 {
 
 .site-nav .link {
   display: block;
-  padding-bottom: 21px;
-  padding-top: 21px;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 .site-nav .item {
   margin-right: 50px;
@@ -421,6 +427,9 @@ h2 {
 .site-nav {
   display: flex;
   align-items: center;
+}
+
+.nav {
   margin-left: 93px;
 }
 
