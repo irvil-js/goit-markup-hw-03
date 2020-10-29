@@ -343,6 +343,7 @@ h2 {
 .adress-footer {
   color: var(--white-clr);
   margin-bottom: 0;
+  height: 21px;
 }
 
 .adress {
@@ -360,6 +361,8 @@ h2 {
   background-color: #f5f4fa;
   color: var(--title-color);
   border-radius: 4px;
+  height: 38px;
+  border: none;
 }
 
 .btn:hover,
@@ -371,14 +374,12 @@ h2 {
 .project {
   text-decoration: none;
 }
-.box {
-  background: #ffffff;
-  width: 370px;
-  text-align: center;
-}
 
 .description {
   border: 1px solid #eeeeee;
+  height: 110px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .project-title {
@@ -389,6 +390,8 @@ h2 {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+  height: 36px;
+  margin-bottom: 0;
 }
 
 .project-description {
@@ -399,6 +402,9 @@ h2 {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  height: 30px;
+  margin-bottom: 0;
+  margin-top: 4px;
 }
 .site-nav .link-nav.current {
   color: var(--accent-color);
@@ -473,20 +479,23 @@ h2 {
   padding-bottom: 94px;
 }
 
-.box:last-child .project-description {
-  margin-bottom: 0;
-}
-
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 50px;
   padding-bottom: 94px;
 }
 
 .box {
   margin-right: 30px;
   margin-bottom: 30px;
+  /* height: 404px;*/
+  background: #ffffff;
+  width: 370px;
+  text-align: center;
+  padding-bottom: 0;
 }
+
 .box:nth-child(3n) {
   margin-right: 0;
 }
@@ -501,14 +510,14 @@ h2 {
 
 .contact-footer {
   margin-top: 9px;
+  height: 21px;
 }
 
-li .list-nav {
+.list-nav {
   display: inline-block;
   display: flex;
   flex-wrap: wrap;
   padding-top: 94px;
-  padding-bottom: 50px;
   text-align: center;
   justify-content: center;
 }
