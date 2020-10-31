@@ -102,8 +102,8 @@ p {
 }
 
 body {
-  max-width: auto;
-  margin: 0px auto;
+  max-width: 100%;
+  margin: auto;
 }
 
 .hero {
@@ -191,6 +191,7 @@ body {
 
 .title-name {
   color: var(--title-color);
+  margin-bottom: 0;
 }
 
 .main-title {
@@ -243,19 +244,14 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin-top: 30px;
-  margin-bottom: 10px;
+  height: 19px;
 }
 
 .team-item {
   text-align: center;
   background: #ffffff;
   border-radius: 0px 0px 4px 4px;
-  height: 368px;
-}
-
-.team-item .profession {
   padding-bottom: 30px;
-  margin-bottom: 0;
 }
 
 .team-item:last-child .profession {
@@ -290,6 +286,11 @@ h2 {
   padding-bottom: 94px;
 }
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .title-advantages {
   color: var(--title-color);
   font-family: "Roboto", sans-serif;
@@ -311,6 +312,9 @@ h2 {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-top: 10px;
+  margin-bottom: 0;
+  height: 19px;
 }
 
 .adress {
@@ -321,9 +325,8 @@ h2 {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 .footer-css {
-  display: flex;
-  flex-wrap: wrap;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -376,10 +379,8 @@ h2 {
 }
 
 .description {
-  border: 1px solid #eeeeee;
-  height: 110px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 24px;
+  text-align: left;
 }
 
 .project-title {
@@ -392,6 +393,7 @@ h2 {
   color: var(--title-color);
   height: 36px;
   margin-bottom: 0;
+  margin-top: 20px;
 }
 
 .project-description {
@@ -482,8 +484,7 @@ h2 {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px;
-  padding-bottom: 94px;
+  margin-top: 50px;
 }
 
 .box {
@@ -494,6 +495,8 @@ h2 {
   width: 370px;
   text-align: center;
   padding-bottom: 0;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
 }
 
 .box:nth-child(3n) {
@@ -506,10 +509,11 @@ h2 {
 
 .footer-adress {
   display: inline-block;
+  margin-top: 9px;
 }
 
 .contact-footer {
-  margin-top: 9px;
+  margin-bottom: 9px;
   height: 21px;
 }
 
@@ -517,7 +521,6 @@ h2 {
   display: inline-block;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 94px;
   text-align: center;
   justify-content: center;
 }
